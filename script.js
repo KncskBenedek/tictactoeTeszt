@@ -104,7 +104,7 @@ function berak() {
         eventLevetelek();
         vegEredmeny(jatekos?"1.játékos nyert":"2.játékos nyert");
     }
-    else if (hanyadikLepes == hossz) {
+    else if (hanyadikLepes === hossz) {
         eventLevetelek()
         vegEredmeny("Döntetlen!");
     }else{
@@ -212,7 +212,7 @@ function balrolJobra() {
     }
     vanEGyoztes = !(n < sorHossz);
     if (vanEGyoztes) {
-        vanEGyoztes = tomb[sarok];
+        nyertesElem = tomb[sarok];
     }
     return vanEGyoztes;
 }
